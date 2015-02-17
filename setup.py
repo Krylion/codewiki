@@ -8,6 +8,8 @@ with open(os.path.join(here, 'README.md')) as f:
 with open(os.path.join(here, 'CHANGES.txt')) as f:
     CHANGES = f.read()
 
+# dodano docutils
+
 requires = [
     'pyramid',
     'pyramid_jinja2',
@@ -17,6 +19,7 @@ requires = [
     'transaction',
     'zope.sqlalchemy',
     'waitress',
+    'docutils',
     ]
 
 setup(name='codewiki',
@@ -26,7 +29,7 @@ setup(name='codewiki',
       classifiers=[
         "Programming Language :: Python"
         ],
-      author='Cezary Kaszuba | Sebastian Talarowski,
+      author='Cezary Kaszuba | Sebastian Talarowski',
       author_email='kaszuba.cezary@gmail.com | talarek992@gmail.com',
       url='http://www.ckaszuba.com',
       keywords='wiki code cezary kaszuba sebastian talarowski wsinf wsiu',
