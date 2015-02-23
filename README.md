@@ -1,4 +1,4 @@
-#CodeWiki
+#CodeWiki 0.9
 ##Cezary Kaszuba & Sebastian Talarowski
 ###Wyższa Szkoła Informatyki i Umiejętności 2014/2015
 
