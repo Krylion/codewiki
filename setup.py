@@ -23,7 +23,7 @@ requires = [
     ]
 
 setup(name='codewiki',
-      version='0.1',
+      version='0.9',
       description='codewiki',
       long_description=README + '\n\n' + CHANGES,
       classifiers=[
