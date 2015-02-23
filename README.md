@@ -4,6 +4,8 @@
 
 ###Projekt semestralny
 
+
+
 ####Przed instalacją CodeWiki zapoznaj się z dokumentacją!
 
 #####Instalacja CodeWiki (Linux)
