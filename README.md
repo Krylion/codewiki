@@ -1,6 +1,7 @@
 #CodeWiki
 ##Cezary Kaszuba & Sebastian Talarowski
-###Projekt semestralny - Wyższa Szkoła Informatyki i Umiejętności 2014/2015
+###Projekt semestralny
+###Wyższa Szkoła Informatyki i Umiejętności 2014/2015
 
 ####Przed instalacją CodeWiki zapoznaj się z dokumentacją!
 
@@ -30,6 +31,11 @@ virtualenv --no-site-packages env
 source env/bin/activate
 easy_install pyramid
 easy_install pyramid_jinja2
+```
+
+- Uruchom aplikację:
+```
+psevre production.ini
 ```
 
 Aby poprawnie przejść przez proces instalacyjny, wymagane jest konto root.
