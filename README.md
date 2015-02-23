@@ -41,4 +41,6 @@ easy_install pyramid_jinja2
 psevre production.ini
 ```
 
+W oknie przeglądarki należy wpisać: localhost:6543
+
 Aby poprawnie przejść przez proces instalacyjny, wymagane jest konto root.
