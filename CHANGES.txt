@@ -1,4 +1,34 @@
 0.0
 ---
 
--  Initial version
+-  Przygotowywanie środowiska pracy
+
+0.2
+---
+
+- Przygotowywanie zmiennych środowiskowych
+
+0.4
+---
+
+- Dostosowywanie struktury aplikacji do systemu operacyjengo
+
+0.6
+---
+
+- Zaktualizowano katalogi aplikacji
+
+0.7
+---
+
+- Dodano pliki szablonów oraz zaktualizowano trasowanie.
+
+0.8
+---
+
+- Usprawniono działanie widoku całej aplikacji
+
+0.9
+---
+
+- Optymalizacja aplikacji
