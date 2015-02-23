@@ -1,7 +1,8 @@
 #CodeWiki
 ##Cezary Kaszuba & Sebastian Talarowski
-###Projekt semestralny
 ###Wyższa Szkoła Informatyki i Umiejętności 2014/2015
+
+###Projekt semestralny
 
 ####Przed instalacją CodeWiki zapoznaj się z dokumentacją!
 
