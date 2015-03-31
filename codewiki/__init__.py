@@ -31,6 +31,7 @@ def main(global_config, **settings):
     config.add_route('search', '/search')
     config.add_route('how_to_add', '/how_to_add')
     config.add_route('all', '/all')
+    config.add_route('all_like', '/all_like/{pagename}')
     config.add_route('login', '/login')
     config.add_route('logout', '/logout')
     config.add_route('view_page', '/{pagename}')
