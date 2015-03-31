@@ -38,8 +38,12 @@ def view_wiki(request):
 def search(request):
     if "page" in request.POST:
         page = request.POST.get('page')
-        exists = DBSession.query(Page).filter_by(name=page).all()
+        new_str = "%"+page+"%"
+        exists = DBSession.query(Page).filter(Page.name.like(new_str)).all()
         if exists:
+            if len(exists) > 1:
+                return HTTPFound(location = request.route_url('all_like', pagename=new_str))
+
             return HTTPFound(location = request.route_url('view_page', pagename=page))
         else:
             return HTTPFound(location = request.route_url('add_page', pagename=page))
@@ -53,8 +57,9 @@ def search(request):
 def view_page(request):
     pagename = request.matchdict['pagename']
     page = DBSession.query(Page).filter_by(name=pagename).first()
+    #Note.query.filter(Note.message.like("%somestr%")).all()
     if page is None:
-        return HTTPNotFound('No such page')
+        return HTTPNotFound('Nie ma takiej strony')
 
     def check(match):
         word = match.group(1)
@@ -159,3 +164,12 @@ def all(request):
     alle = DBSession.query(Page.name).order_by(Page.name).all()
 
     return dict(all=alle, logged_in=request.authenticated_userid)
+
+@view_config(route_name="all_like", renderer='templates/all_like.pt',
+             permission='view')
+def all_like(request):
+    pagename = request.matchdict['pagename']
+
+    page = DBSession.query(Page).filter(Page.name.like(pagename)).all()
+
+    return dict(all=page, logged_in=request.authenticated_userid)
